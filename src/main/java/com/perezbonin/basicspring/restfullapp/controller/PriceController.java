@@ -19,31 +19,14 @@ public class PriceController {
 		
 		CurrencyManager currencyManager = null; 
 		
-		//currency = currency.substring(0, 1).toUpperCase() + currency.substring(1) + "Strategy";
+		currency = currency.substring(0, 1).toUpperCase() + currency.substring(1) + "Strategy";
 
-		/*try {
-			currencyManager = new CurrencyManager();
-			currencyManager.setCurrencyStragegyService((CurrencyStrategyService) Class.forName(currency).newInstance());
-			return currencyManager.getCurrencyValues();
+		try {
+			currencyManager = (CurrencyManager) Class.forName(currency).newInstance();
 		} catch (Exception e) {
 			
-		}*/
-		
-		currencyManager = new CurrencyManager();
-		
-		if(currency.equals("dolar")) {
-			currencyManager.setCurrencyStragegyService(new DolarStrategy());
-			return currencyManager.getCurrencyValues();
-		} else if(currency.equals("peso")) {
-			currencyManager.setCurrencyStragegyService(new PesoStrategy());
-			return currencyManager.getCurrencyValues();
-		} else if(currency.equals("real")) {
-			currencyManager.setCurrencyStragegyService(new RealStrategy());
-			return currencyManager.getCurrencyValues();
-		} else {
-			return null;
 		}
-		
+		return currencyManager.getCurrencyValues();
 	}
 	
 }

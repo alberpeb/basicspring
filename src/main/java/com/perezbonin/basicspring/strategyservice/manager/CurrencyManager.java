@@ -7,6 +7,10 @@ public class CurrencyManager implements CurrencyStrategyService {
 
 	CurrencyStrategyService currencyStrategyService;
 	
+	CurrencyManager(CurrencyStrategyService currencyStrategyService){
+		this.currencyStrategyService = currencyStrategyService;
+	}
+	
 	public void setCurrencyStragegyService(CurrencyStrategyService currencyStrategyService){
 		this.currencyStrategyService = currencyStrategyService;
 	}
