@@ -8,10 +8,9 @@ public class Currency {
 	
 	public Currency() {
 	}
-	public Currency(BigDecimal purchasePrice, BigDecimal salesPrice) {
-		super();
-		this.purchasePrice = purchasePrice;
-		this.salesPrice = salesPrice;
+	public Currency(double purchasePrice, double salesPrice) {
+		this.purchasePrice = BigDecimal.valueOf(purchasePrice);
+		this.salesPrice = BigDecimal.valueOf(salesPrice);
 	}
 	public BigDecimal getPurchasePrice() {
 		return purchasePrice;
