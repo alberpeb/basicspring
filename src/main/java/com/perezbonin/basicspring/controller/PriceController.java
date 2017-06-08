@@ -17,8 +17,8 @@ public class PriceController {
 	@RequestMapping(method = RequestMethod.GET)
 	public Currency price(@PathVariable("currency") String currency) {
 		
-		currency = "com.perezbonin.basicspring.strategyservice." + currency.substring(0, 1).toUpperCase() + currency.substring(1) + "Strategy";
-		System.out.println(currency);
+		currency = "com.perezbonin.basicspring.strategyservice." 
+				+ currency.substring(0, 1).toUpperCase() + currency.substring(1) + "Strategy";
 		if(!this.isPathAClass(currency))
 			return null;
 		
@@ -39,4 +39,5 @@ public class PriceController {
 			 return false;
 			}
 	}
+	
 }
