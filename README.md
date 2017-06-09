@@ -1,6 +1,6 @@
-Basic Spring RESTfull App
+# Basic Spring Boot Project
 
-
+This sample project contains the basics configurations of a Spring Boot
 
 ### Requirements
  * Preferably [Java 1.8](http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html).
