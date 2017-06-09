@@ -1,7 +1,7 @@
 package com.perezbonin.basicspring.strategyservice;
 
 import com.perezbonin.basicspring.model.Currency;
-import com.perezbonin.basicspring.strategyservice.json.JsonToCurrency;
+import com.perezbonin.basicspring.service.json.JsonToCurrency;
 
 public class DolarStrategy  implements CurrencyStrategyService{
 

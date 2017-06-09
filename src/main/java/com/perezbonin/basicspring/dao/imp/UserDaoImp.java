@@ -18,7 +18,7 @@ public class UserDaoImp implements UserDao{
 	@Override
 	public List<User> getAllUsers() {
 		List<User> users = jdbcTemplate.query(
-                "select * from exampledb.user",
+                "select * from user",
                 (rs, rowNum) -> new User(rs.getInt("id"),
                         rs.getString("name"), rs.getString("surname"), rs.getString("email"), rs.getString("password"))
         );

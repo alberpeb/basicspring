@@ -1,4 +1,4 @@
-package com.perezbonin.basicspring.strategyservice.json;
+package com.perezbonin.basicspring.service.json;
 
 import java.math.BigDecimal;
 

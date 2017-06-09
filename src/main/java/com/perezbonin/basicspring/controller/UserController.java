@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.perezbonin.basicspring.model.User;
 import com.perezbonin.basicspring.service.UserService;
 
 @RestController
@@ -18,10 +17,7 @@ public class UserController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String getAllUsers() {
 
-		for (User user : userService.getAllUsers()) {
-			System.out.println(user.getName());
-		}
-		return "holis";
+	return userService.getAllUsers();
 	}
 
 }

@@ -1,15 +1,15 @@
 CREATE DATABASE exampledb;
 
-CREATE TABLE ´User´ ( 
+CREATE TABLE User ( 
 id INT NOT NULL AUTO_INCREMENT, 
 name VARCHAR(50), 
 surname VARCHAR(50), 
 email VARCHAR(100), 
-password BINARY(50), 
+password VARCHAR(50), 
 
 PRIMARY KEY(id) );
 
-INSERT INTO ´User´ 
+INSERT INTO User 
 ( name, surname, email, password ) 
 VALUES
 ( "Rick", "Sanchez", "wubbalubba@dubdub.com", "asdasd" ),
