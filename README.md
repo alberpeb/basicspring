@@ -15,7 +15,7 @@ Or you could just import it following [this](https://github.com/collab-uniba/soc
 
 Don't forget to update maven using your IDE. You can right-click on your project then Maven > Update Project. Or you can do it by console:
 ```sh
-$ mvn update
+mvn update
 ```
 ### Mysql
 Run src/main/resources/script-database.sql in your console.
