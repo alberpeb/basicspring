@@ -30,3 +30,8 @@ spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 * Run src/main/resources/script-database.sql in your console.
 
 * Run application as Java Application.
+
+### API RESTful
+
+* http://localhost:8080/users :List of users.
+* http://localhost:8080/myrestfullapp/cotizacion/ [dolar][real][peso] : Currency value.
