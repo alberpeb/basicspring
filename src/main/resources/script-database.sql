@@ -1,6 +1,8 @@
-CREATE DATABASE exampledb;
+CREATE DATABASE springrest;
 
-CREATE TABLE User ( 
+USE springrest;
+
+CREATE TABLE user ( 
 id INT NOT NULL AUTO_INCREMENT, 
 name VARCHAR(50), 
 surname VARCHAR(50), 
@@ -9,7 +11,7 @@ password VARCHAR(50),
 
 PRIMARY KEY(id) );
 
-INSERT INTO User 
+INSERT INTO user 
 ( name, surname, email, password ) 
 VALUES
 ( "Rick", "Sanchez", "wubbalubba@dubdub.com", "asdasd" ),
