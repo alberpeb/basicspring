@@ -1,5 +1,6 @@
 package com.perezbonin.basicspring.controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -9,11 +10,12 @@ import com.perezbonin.basicspring.model.Currency;
 import com.perezbonin.basicspring.strategyservice.CurrencyStrategyService;
 import com.perezbonin.basicspring.strategyservice.manager.CurrencyManager;
 
-
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/myrestfullapp/cotizacion/{currency}")
 public class PriceController {
 
+	
 	@RequestMapping(method = RequestMethod.GET)
 	public Currency price(@PathVariable("currency") String currency) {
 		
